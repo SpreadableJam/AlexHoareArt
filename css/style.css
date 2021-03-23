@@ -14,6 +14,8 @@ h2 {
 	letter-spacing: 1px;
 	font-weight: 400;
 	font-size: 30px;
+	width: 100%;
+	text-align: center;
 }
 h3, h4 {
 	color: #222;
@@ -21,6 +23,8 @@ h3, h4 {
 	font-weight: 300;
 	letter-spacing: 1px;
 	padding-top: 20px;
+	width: 100%;
+	text-align: center;
 }
 h5 {
 	text-transform: uppercase;
@@ -31,7 +35,6 @@ p.intro {
 	font-size: 28px;
 	margin: 5px 0 0;
 	padding-top: 60px;
-
 	line-height: 24px;
 }
 a {
@@ -70,7 +73,6 @@ hr {
 	height: 1px;
 	width: 70px;
 	text-align: center;
-	position: relative;
 	background: #666;
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -115,8 +117,8 @@ hr {
 	font-size: 24px;
 	margin-bottom: 0px;
 	margin-top: 20px;
-
-
+	width: 100%;
+	text-align: center;
 }
 header .intro-text {
 	padding-top: 0px;
@@ -129,6 +131,7 @@ header .intro-text {
 #about .about-text {
 	margin-left: 0px;
 	text-align: center;
+	width: 100%;
 }
 #about img:not(.gallery__img){
 	border-radius: 50%;
@@ -141,6 +144,8 @@ header .intro-text {
 	margin-top: 50px;
 	margin-bottom: 20px;
 	line-height: 22px;
+	width: 100%;
+	text-align: center;
 }
 /* Portfolio Section */
 *,
@@ -168,10 +173,12 @@ body {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+	width: 100%;
+  grid-template-columns: minmax(8, 1fr);
+  grid-template-rows: minmax(8, 5vw);
   grid-gap: 1.5rem;
 	padding: 20px 0 0 0;
+
 }
 .gallery__img {
   width: 100%;
